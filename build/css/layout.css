@@ -7,7 +7,270 @@ and open the template in the editor.
     Created on : 21/05/2015, 04:23:43
     Author     : JuanCruz
 */
-.less-test {
-  background-color: #0100ee;
-  color: #1255ff;
+@font-face {
+  font-family: 'CenturySchoolbook';
+  src: url('fonts/CenturySchoolbook.eot?#iefix') format('embedded-opentype'), url('fonts/CenturySchoolbook.woff') format('woff'), url('fonts/CenturySchoolbook.ttf') format('truetype'), url('fonts/CenturySchoolbook.svg#CenturySchoolbook') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background-image: url(../images/image-body-t.png), url(../images/trama-body.gif);
+  background-repeat: no-repeat, repeat;
+  background-position: center center, top left ;
+}
+#header .top-header {
+  background-color: rgba(226, 226, 134, 0.35);
+  padding: 7px 0;
+  border-bottom: 1px solid #a9a9a3;
+  box-shadow: 0 -1px 3px 1px #b7b7b1;
+}
+#header .top-header .search-box .search-group {
+  border: 1px solid rgba(241, 241, 194, 0.35);
+  background-image: linear-gradient(rgba(226, 226, 134, 0.35), rgba(219, 221, 134, 0.35));
+  color: #050505;
+}
+#header .top-header .search-box .input-group {
+  box-shadow: 0px 0 2px 1px rgba(5, 5, 5, 0.35);
+  border-radius: 5px;
+}
+#header .top-header .search-box .input-group input {
+  border: 1px solid rgba(241, 241, 194, 0.35);
+  background-image: linear-gradient(rgba(226, 226, 134, 0.35), rgba(219, 221, 134, 0.35));
+  color: #050505;
+  border-right: none;
+  box-shadow: none;
+  border-radius: 5px 0 0 5px;
+}
+#header .top-header .search-box .input-group .input-group-btn button i {
+  color: rgba(5, 5, 5, 0.2);
+}
+#header .top-header .search-box .input-group .input-group-btn button {
+  border: 1px solid rgba(241, 241, 194, 0.35);
+  background-image: linear-gradient(rgba(226, 226, 134, 0.35), rgba(219, 221, 134, 0.35));
+  color: #050505;
+  border-radius: 0 5px 5px 0;
+}
+#header .top-header .search-box .input-group .input-group-btn button:hover i {
+  color: #050505;
+}
+#header .top-header .items-header ul {
+  text-align: center;
+  margin: 7px 0 0;
+}
+#header .top-header .items-header ul .li-text-format {
+  font-size: 0.87em;
+  color: #ffffff;
+  font-family: arial;
+  text-shadow: 1px 0 1px #83836d;
+  font-weight: bold;
+}
+#header .top-header .items-header ul li {
+  font-size: 0.87em;
+  color: #ffffff;
+  font-family: arial;
+  text-shadow: 1px 0 1px #83836d;
+  font-weight: bold;
+}
+#header .top-header .items-header ul li a {
+  font-size: 0.87em;
+  color: #ffffff;
+  font-family: arial;
+  text-shadow: 1px 0 1px #83836d;
+  font-weight: bold;
+}
+#header .top-header .items-header ul li a:hover {
+  color: #e1e0e0;
+}
+#header .top-header .share-list {
+  margin-top: 7px;
+}
+#header .top-header .share-list ul {
+  text-align: center;
+  margin-bottom: 0;
+}
+#header .top-header .share-list ul li {
+  text-align: center;
+}
+#header .top-header .share-list ul li:first-child a {
+  background-image: url(../images/rss.png);
+}
+#header .top-header .share-list ul li:last-child a {
+  background-image: url(../images/fb.png);
+}
+#header .top-header .share-list ul li a {
+  display: block;
+  text-align: center;
+  height: 20px;
+  width: 100%;
+  background-size: auto 100%;
+  background: top center no-repeat;
+  background-image: url(../images/tw.png);
+  text-indent: -9999px;
+  opacity: 0.7;
+}
+#header .top-header .share-list ul li a:hover {
+  opacity: 1;
+}
+#header .bottom-header .center-block {
+  padding: 15px 0;
+}
+#header .bottom-header .center-block a {
+  display: block;
+  width: 100%;
+}
+#header .bottom-header .center-block a img {
+  width: 100%;
+}
+#contenido #slider {
+  padding: 0;
+}
+#contenido #slider #carousel-central .carousel-inner .item .carousel-caption {
+  left: 5%;
+  right: 5%;
+  bottom: 10%;
+  background-image: linear-gradient(to right, rgba(220, 220, 212, 0) 0%, rgba(178, 178, 171, 0.1) 7%, rgba(219, 219, 211, 0.74) 25%, rgba(219, 219, 211, 0.74) 75%, rgba(178, 178, 171, 0.1) 93%, rgba(220, 220, 212, 0) 100%);
+  padding-bottom: 20px;
+}
+#contenido #slider #carousel-central .carousel-inner .item .carousel-caption p {
+  font-family: 'CenturySchoolbook';
+  font-size: 1.18em;
+  color: #4e4d4d;
+  text-shadow: 1px 1px 0 #ffffff;
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 5px;
+  line-height: 19px;
+}
+#contenido #slider #carousel-central ol.carousel-indicators {
+  margin-bottom: 0;
+  bottom: 5px;
+}
+#contenido #slider #carousel-central ol.carousel-indicators li {
+  background-color: #e2e2aa;
+  border-color: #e2e2aa;
+  box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.8);
+  width: 12px;
+  height: 12px;
+  margin: 0 2px;
+}
+#contenido #slider #carousel-central ol.carousel-indicators li:first-child {
+  margin-left: 0;
+}
+#contenido #slider #carousel-central ol.carousel-indicators li.active {
+  background-color: #676560;
+  border-color: #676560;
+}
+#contenido #bottom-content {
+  margin-top: 25px;
+  /*<div class="news-cont col-md-9">
+                        <div class="row">
+                            <div class="short-news news col-md-6 clearfix">
+                                <div class="image">
+                                    <img class="img-rounded" src="./images/news1.jpg" alt="news"/>
+                                </div>
+                                <div class="description">
+                                    <h3>Viernes Santo en la Catedral</h3>
+                                    <p>Es cu&aacute;nto deseo que los lugares en los que siempre se manifiesta la Iglesia.</p>
+                                    <p>
+                                        <a href="#">Ver M&aacute;s</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>*/
+}
+#contenido #bottom-content #menu ul {
+  box-shadow: 1px 1px 1px 1px #acaba5;
+}
+#contenido #bottom-content #menu ul li {
+  margin-top: 0;
+  border-radius: 0;
+  background-color: transparent;
+  border-right: none;
+  border-left: 5px solid #c5c5a7;
+  border-bottom: 1px solid #c1c0a8;
+  border-top: 1px solid #dcdbc5;
+}
+#contenido #bottom-content #menu ul li .panel-heading {
+  background-color: rgba(226, 226, 124, 0.24);
+  padding: 0;
+}
+#contenido #bottom-content #menu ul li .panel-heading h4 {
+  margin: 0;
+}
+#contenido #bottom-content #menu ul li .panel-heading h4 a {
+  display: block;
+  font-family: 'CenturySchoolbook';
+  color: #68614d;
+  font-size: 1.25em;
+  font-style: italic;
+  padding: 9px 0 9px 10px;
+  width: 100%;
+}
+#contenido #bottom-content #menu ul li .panel-heading h4 a:hover,
+#contenido #bottom-content #menu ul li .panel-heading h4 a:focus {
+  text-decoration: none;
+}
+#contenido #bottom-content #menu ul li .panel-body {
+  padding-top: 5px;
+}
+#contenido #bottom-content #menu ul li .panel-body ul {
+  box-shadow: none;
+}
+#contenido #bottom-content #menu ul li .panel-body ul li {
+  list-style-type: disc;
+  color: #47443a;
+  border: none;
+}
+#contenido #bottom-content #menu ul li .panel-body ul li:hover,
+#contenido #bottom-content #menu ul li .panel-body ul li.active {
+  color: #a55730;
+}
+#contenido #bottom-content #menu ul li .panel-body ul li a {
+  font-size: 0.93em;
+  color: #a55730;
+  font-family: 'CenturySchoolbook';
+  font-style: italic;
+}
+#contenido #bottom-content #menu ul li .panel-body ul li a:hover,
+#contenido #bottom-content #menu ul li .panel-body ul li a.active {
+  text-decoration: underline;
+}
+#contenido #bottom-content #menu ul li.visible {
+  border-left-color: #e2e286;
+}
+#contenido #bottom-content #menu ul li.visible .panel-heading {
+  background-color: transparent;
+}
+#contenido #bottom-content #menu ul li.visible .panel-heading a {
+  color: #a55730;
+}
+#contenido #bottom-content .news-cont .news {
+  background-color: #e4e4bf;
+  padding: 1px 9px 1px 0;
+  box-shadow: 1px 1px 1px 1px #bfc0b9;
+  border-radius: 5px;
+}
+#contenido #bottom-content .news-cont .news .description h3 {
+  color: #68614d;
+  font-family: 'CenturySchoolbook';
+  font-style: italic;
+  font-size: 1.25em;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #eeeeea;
+}
+@media (max-width: 480px) {
+  body {
+    font-size: 10px !important;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 14px !important;
+  }
+}
+@media (max-width: 992px) {
+  body {
+    font-size: 16px !important;
+  }
 }
