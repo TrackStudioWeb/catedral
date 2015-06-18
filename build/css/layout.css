@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Muli);
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -26,19 +27,23 @@ body {
 #header .top-header .search-box .search-group {
   border: 1px solid rgba(241, 241, 194, 0.35);
   background-image: linear-gradient(rgba(226, 226, 134, 0.35), rgba(219, 221, 134, 0.35));
+  background-color: transparent;
   color: #050505;
+  height: 25px;
 }
 #header .top-header .search-box .input-group {
-  box-shadow: 0px 0 2px 1px rgba(5, 5, 5, 0.35);
-  border-radius: 5px;
+  box-shadow: 0px 0 2px 1px rgba(5, 5, 5, 0.2);
+  border-radius: 3px;
 }
 #header .top-header .search-box .input-group input {
   border: 1px solid rgba(241, 241, 194, 0.35);
   background-image: linear-gradient(rgba(226, 226, 134, 0.35), rgba(219, 221, 134, 0.35));
+  background-color: transparent;
   color: #050505;
+  height: 25px;
   border-right: none;
   box-shadow: none;
-  border-radius: 5px 0 0 5px;
+  font-size: 0.97em;
 }
 #header .top-header .search-box .input-group .input-group-btn button i {
   color: rgba(5, 5, 5, 0.2);
@@ -46,49 +51,52 @@ body {
 #header .top-header .search-box .input-group .input-group-btn button {
   border: 1px solid rgba(241, 241, 194, 0.35);
   background-image: linear-gradient(rgba(226, 226, 134, 0.35), rgba(219, 221, 134, 0.35));
+  background-color: transparent;
   color: #050505;
-  border-radius: 0 5px 5px 0;
+  height: 25px;
+  padding: 0 12px;
 }
 #header .top-header .search-box .input-group .input-group-btn button:hover i {
   color: #050505;
 }
 #header .top-header .items-header ul {
   text-align: center;
-  margin: 7px 0 0;
+  /*margin: 7px 0 0;*/
 }
 #header .top-header .items-header ul .li-text-format {
-  font-size: 0.87em;
-  color: #ffffff;
-  font-family: arial;
-  text-shadow: 1px 0 1px #83836d;
+  font-size: 0.97em;
+  color: #e1e0e0;
+  font-family: 'Muli', sans-serif;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.83);
   font-weight: bold;
 }
 #header .top-header .items-header ul li {
-  font-size: 0.87em;
-  color: #ffffff;
-  font-family: arial;
-  text-shadow: 1px 0 1px #83836d;
+  font-size: 0.97em;
+  color: #e1e0e0;
+  font-family: 'Muli', sans-serif;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.83);
   font-weight: bold;
 }
 #header .top-header .items-header ul li a {
-  font-size: 0.87em;
-  color: #ffffff;
-  font-family: arial;
-  text-shadow: 1px 0 1px #83836d;
+  font-size: 0.97em;
+  color: #e1e0e0;
+  font-family: 'Muli', sans-serif;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.83);
   font-weight: bold;
 }
 #header .top-header .items-header ul li a:hover {
-  color: #e1e0e0;
+  color: #fffff;
 }
 #header .top-header .share-list {
-  margin-top: 7px;
+  margin-top: 2px;
 }
 #header .top-header .share-list ul {
-  text-align: center;
+  text-align: right;
   margin-bottom: 0;
 }
 #header .top-header .share-list ul li {
   text-align: center;
+  float: none;
 }
 #header .top-header .share-list ul li:first-child a {
   background-image: url(../images/rss.png);
@@ -164,6 +172,8 @@ body {
 }
 #contenido #bottom-content {
   margin-top: 25px;
+}
+#contenido #bottom-content .back-image {
   background: url(../images/image-body-t.png) no-repeat center center transparent;
 }
 #contenido #bottom-content #menu ul {
@@ -223,13 +233,16 @@ body {
 #contenido #bottom-content #menu ul li .panel-body ul li a.active {
   text-decoration: underline;
 }
-#contenido #bottom-content #menu ul li.visible {
+#contenido #bottom-content #menu ul li.visible,
+#contenido #bottom-content #menu ul li:hover {
   border-left-color: #e2e286;
 }
-#contenido #bottom-content #menu ul li.visible .panel-heading {
+#contenido #bottom-content #menu ul li.visible .panel-heading,
+#contenido #bottom-content #menu ul li:hover .panel-heading {
   background-color: transparent;
 }
-#contenido #bottom-content #menu ul li.visible .panel-heading a {
+#contenido #bottom-content #menu ul li.visible .panel-heading a,
+#contenido #bottom-content #menu ul li:hover .panel-heading a {
   color: #a55730;
 }
 #contenido #bottom-content .news-cont .news {
@@ -259,19 +272,19 @@ body {
   margin: 7px 0 0;
 }
 #contenido #bottom-content .news-cont .news .description p {
-  font-family: arial;
+  font-family: 'Muli', sans-serif;
   color: #68614d;
   font-size: 0.81em;
   border-top: 1px solid #b1b1ac;
   padding-top: 5px;
+  margin-bottom: 0;
 }
 #contenido #bottom-content .news-cont .news .description p.viewmore {
   border-top: none;
-  margin-bottom: 0;
 }
 #contenido #bottom-content .news-cont .news .description p a {
-  font-family: arial;
-  font-size: 0.75em;
+  font-family: 'Muli', sans-serif;
+  font-size: 1em;
   color: #504f4b;
 }
 #contenido #bottom-content .news-cont .news .description p a:hover,
