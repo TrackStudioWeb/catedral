@@ -109,6 +109,7 @@ body {
   text-align: center;
   height: 20px;
   width: 100%;
+  min-width: 20px;
   background-size: auto 100%;
   background: top center no-repeat;
   background-image: url(../images/tw.png);
@@ -360,6 +361,9 @@ body {
 @media (max-width: 480px) {
   body {
     font-size: 10px !important;
+  }
+  #header .top-header .share-list ul {
+    text-align: center;
   }
 }
 @media (max-width: 768px) {
