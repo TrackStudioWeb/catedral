@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Catedral Posadas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+    </head>
+    <body>
+        <header id="header">
+            <div class="top-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 pull-right col-md-pull-0 col-md-7">
+                            <div class="row">
+                                <div class="search-box col-xs-12 col-md-push-2 col-md-4">
+                                    <form method="POST" action="#" role="search">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Buscar" name="search" id="search"/>
+                                            <div class="input-group-btn">
+                                                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="items-header col-xs-12 col-md-4 col-md-push-2">
+                                    <ul class="list-inline">
+                                        <li><a href="#">Contacto</a></li>
+                                        <li>|</li>
+                                        <li><a href="#">Mapa del sitio</a></li>
+                                    </ul>
+                                </div>
+                                <div class="share share-list pull-right col-xs-12 col-md-2">
+                                    <ul class="list-inline row">
+                                        <li class=""><a href="#">rss</a></li>
+                                        <li class=""><a href="#">tw</a></li>
+                                        <li class=""><a href="#">fb</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-6 col-md-push-3 col-xs-push-3 col-lg-push-3 center-block">
+                            <a href="#"><img src="./images/logo.png" alt="Parroquia San Jos&eacute;, Iglesia Catedral de Posadas"/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="contenido" class="interna">
+            <div id="bottom-content" class="container">
+                <div class="row">
+                    <div class="menu-cont col-md-3">
+                        <nav id="menu">
+                            <ul class="panel-group list-unstyled" id="accordion-menu" role="tablist" aria-multiselectable="true">
+                                <li class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading1">
+                                        <h4>
+                                            <a data-toggle="collapse" data-parent="#accordion-menu" href="#collapse1" aria-expanded="true" aria-controls="collapseOne">Inicio</a>
+                                        </h4>
+                                    </div>
+                                </li>
+                                <li class="panel panel-default visible">
+                                    <div class="panel-heading" role="tab" id="heading2">
+                                        <h4>
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion-menu" href="#collapse2" aria-expanded="true" aria-controls="collapse2">Historia</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse2" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading2">
+                                        <div class="panel-body">
+                                            <ul class="submenu list">
+                                                <li><a href="#">Templo</a></li>
+                                                <li><a href="#" class="active">P&aacute;rrocos</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading3">
+                                        <h4>
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion-menu" href="#collapse3" aria-expanded="true" aria-controls="collapse3">Nuestro P&aacute;rroco</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+                                        <div class="panel-body">
+                                            <ul class="submenu list">
+                                                <li><a href="#">Submenu 1</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading4">
+                                        <h4>
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion-menu" href="#collapse4" aria-expanded="true" aria-controls="collapse4">Patrono</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
+                                        <div class="panel-body">
+                                            <ul class="submenu list">
+                                                <li><a href="#">Submenu 1</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading5">
+                                        <h4>
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion-menu" href="#collapse5" aria-expanded="true" aria-controls="collapse5">Horarios</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
+                                        <div class="panel-body">
+                                            <ul class="submenu list">
+                                                <li><a href="#">Misas</a></li>
+                                                <li><a href="#">Secretar&iacute;a</a></li>
+                                                <li><a href="#">Confesiones</a></li>
+                                                <li><a href="#">Intenciones</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading6">
+                                        <h4>
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion-menu" href="#collapse6" aria-expanded="true" aria-controls="collapse6">Sacramentos</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
+                                        <div class="panel-body">
+                                            <ul class="submenu list">
+                                                <li><a href="#">Submenu 1</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading7">
+                                        <h4>
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion-menu" href="#collapse7" aria-expanded="true" aria-controls="collapse7">Grupos Parroquiales</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading7">
+                                        <div class="panel-body">
+                                            <ul class="submenu list">
+                                                <li><a href="#">Submenu 1</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading8">
+                                        <h4>
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion-menu" href="#collapse8" aria-expanded="true" aria-controls="collapse8">Novedades</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading8">
+                                        <div class="panel-body">
+                                            <ul class="submenu list">
+                                                <li><a href="#">Submenu 1</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading9">
+                                        <h4>
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion-menu" href="#collapse9" aria-expanded="true" aria-controls="collapse9">Donaciones</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading9">
+                                        <div class="panel-body">
+                                            <ul class="submenu list">
+                                                <li><a href="#">Submenu 1</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading10">
+                                        <h4>
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion-menu" href="#collapse10" aria-expanded="true" aria-controls="collapse10">Tour Virtual</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading10">
+                                        <div class="panel-body">
+                                            <ul class="submenu list">
+                                                <li><a href="#">Submenu 1</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="heading11">
+                                        <h4>
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion-menu" href="#collapse11" aria-expanded="true" aria-controls="collapse11">Links de Inter&eacute;s</a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapse11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading11">
+                                        <div class="panel-body">
+                                            <ul class="submenu list">
+                                                <li><a href="#">Submenu 1</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md-9 back-image">
+                        <div class="row">
+                            <h1 class="text-center">P&aacute;rrocos</h1>
+                            <div class="col-xs-12">
+                                <div class="parroco parroco-main col-xs-12 col-md-8 col-sm-10 clearfix">
+                                    <div class="image">
+                                        <img src="./images/parroco1.png" alt="parroco"/>
+                                    </div>
+                                    <div class="description">
+                                        <h4>Padre Lorem</h4>
+                                        <h5>P&aacute;rroco actual</h5>
+                                        <p>Descripci&oacute;n y comentarios Lorem ipsum dolor sit amet, consectetur.</p>  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-10 col-xs-push-1">
+                                <div class="row">
+                                    <div class="parroco col-md-4 col-sm-6 text-center">
+                                        <div class="image">
+                                            <img src="./images/parroco2.png" alt="parroco"/>
+                                        </div>
+                                        <div class="description">
+                                            <h4><span>Padre Lorem</span></h4>
+                                            <h5>2013 - 2015</h5>
+                                        </div>
+                                    </div>
+                                    <div class="parroco col-md-4 col-sm-6 text-center">
+                                        <div class="image">
+                                            <img src="./images/parroco2.png" alt="parroco"/>
+                                        </div>
+                                        <div class="description">
+                                            <h4><span>Padre Lorem</span></h4>
+                                            <h5>2013 - 2015</h5>
+                                        </div>
+                                    </div>
+                                    <div class="parroco col-md-4 col-sm-6 text-center">
+                                        <div class="image">
+                                            <img src="./images/parroco2.png" alt="parroco"/>
+                                        </div>
+                                        <div class="description">
+                                            <h4><span>Padre Lorem</span></h4>
+                                            <h5>2013 - 2015</h5>
+                                        </div>
+                                    </div>
+                                    <div class="parroco col-md-4 col-sm-6 text-center">
+                                        <div class="image">
+                                            <img src="./images/parroco2.png" alt="parroco"/>
+                                        </div>
+                                        <div class="description">
+                                            <h4><span>Padre Lorem</span></h4>
+                                            <h5>2013 - 2015</h5>
+                                        </div>
+                                    </div>
+                                    <div class="parroco col-md-4 col-sm-6 text-center">
+                                        <div class="image">
+                                            <img src="./images/parroco2.png" alt="parroco"/>
+                                        </div>
+                                        <div class="description">
+                                            <h4><span>Padre Lorem</span></h4>
+                                            <h5>2013 - 2015</h5>
+                                        </div>
+                                    </div>
+                                    <div class="parroco col-md-4 col-sm-6 text-center">
+                                        <div class="image">
+                                            <img src="./images/parroco2.png" alt="parroco"/>
+                                        </div>
+                                        <div class="description">
+                                            <h4><span>Padre Lorem</span></h4>
+                                            <h5>2013 - 2015</h5>
+                                        </div>
+                                    </div>
+                                    <div class="parroco col-md-4 col-sm-6 text-center">
+                                        <div class="image">
+                                            <img src="./images/parroco2.png" alt="parroco"/>
+                                        </div>
+                                        <div class="description">
+                                            <h4><span>Padre Lorem</span></h4>
+                                            <h5>2013 - 2015</h5>
+                                        </div>
+                                    </div>
+                                    <div class="parroco col-md-4 col-sm-6 text-center">
+                                        <div class="image">
+                                            <img src="./images/parroco2.png" alt="parroco"/>
+                                        </div>
+                                        <div class="description">
+                                            <h4><span>Padre Lorem</span></h4>
+                                            <h5>2013 - 2015</h5>
+                                        </div>
+                                    </div>
+                                    <div class="parroco col-md-4 col-sm-6 text-center">
+                                        <div class="image">
+                                            <img src="./images/parroco2.png" alt="parroco"/>
+                                        </div>
+                                        <div class="description">
+                                            <h4><span>Padre Lorem</span></h4>
+                                            <h5>2013 - 2015</h5>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div id="paginator" class="col-xs-12">
+                        <ul class="pagination">
+                            <li>
+                                <a href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&lt;</span>
+                                </a>
+                            </li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li>
+                                <a href="#" aria-label="Next">
+                                    <span aria-hidden="true">&gt;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-5 textos">
+                        <span>Copyright &COPY; 2015 Catedral Posadas</span>
+                        Todos los derechos reservados - Trackstudio
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="center-block obispado-logo">
+                            <img src="./images/obispado-logo3.png" alt="Obispado de Posadas"/>
+                        </div>
+                    </div>
+                    <div class="contact-data col-xs-5">
+                        <h6>Parroquia San Jos&eacute; - Iglesia Catedral</h6>
+                        <a href="#">www.catedralposadas.com</a>
+                        <a href="mailto:atedralposadas@correo.com">atedralposadas@correo.com</a>
+                        <p>San Mart&iacute;n 1850, N3300abn, Posadas</p>
+                        <p>Tel&eacute;fono: +54 376 4423114</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>
+            $('#accordion-menu li').on('show.bs.collapse', function () {
+                $('#accordion-menu li').removeClass('visible');
+                $(this).addClass('visible');
+            });
+            $('#accordion-menu li').on('hide.bs.collapse', function () {
+                $(this).removeClass('visible');
+            });
+        </script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
